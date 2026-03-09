@@ -149,7 +149,7 @@
   --border-dark: #6a7484;
   --nav-bg: #FFFFFF;
   --nav-text: #4A4A4A;
-  --nav-text-hover: #F8E97A;
+  --nav-text-hover: #996300;
   --gradient-primary: linear-gradient(180deg, #2F74D8 0%, #996300 100%);
   --gradient-gold-shine: linear-gradient(90deg, #996300 0%, #FFD46B 50%, #996300 100%);
   --gradient-secondary: linear-gradient(180deg, #FFC233 0%, #996300 100%);
@@ -402,7 +402,7 @@ button {
 :root {
   --nav-bg: #FFFFFF;
   --nav-text: #4A4A4A;
-  --nav-text-hover: #F8E97A;
+  --nav-text-hover: #996300;
   --primary: #996300;
   --secondary: #7c753d;
   --accent: #aa562c;
@@ -629,7 +629,7 @@ button {
 :root {
   --nav-bg: #FFFFFF;
   --nav-text: #4A4A4A;
-  --nav-text-hover: #F8E97A;
+  --nav-text-hover: #996300;
   --primary: #996300;
   --secondary: #7c753d;
   --accent: #aa562c;
@@ -5807,6 +5807,8 @@ body.accessibility-widget-visible ._access-menu {
     display: none !important;
   }
 }
+
+
 
 
 
