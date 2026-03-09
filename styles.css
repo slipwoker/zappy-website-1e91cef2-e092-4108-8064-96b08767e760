@@ -150,11 +150,11 @@
   --nav-bg: #FFFFFF;
   --nav-text: #4A4A4A;
   --nav-text-hover: #b36200;
-  --gradient-primary: linear-gradient(180deg, #2F74D8 0%, #1F4B99 100%);
+  --gradient-primary: linear-gradient(180deg, #2F74D8 0%, #806200 100%);
   --gradient-gold-shine: linear-gradient(90deg, #806200 0%, #FFD46B 50%, #806200 100%);
   --gradient-secondary: linear-gradient(180deg, #FFC233 0%, #806200 100%);
   --gradient-gold-accent: linear-gradient(135deg, #FFC233 0%, #806200 100%);
-  --gradient-dark-section: linear-gradient(135deg, #1F4B99 0%, #103A82 100%);
+  --gradient-dark-section: linear-gradient(135deg, #806200 0%, #103A82 100%);
   --gradient-overlay-dark: linear-gradient(90deg, rgba(255,255,255,0.78) 0%, rgba(255,255,255,0.62) 55%, rgba(255,255,255,0.00) 100%);
   --gradient-light-section: linear-gradient(180deg, #FFFFFF 0%, #F6F8FB 100%);
   --gradient-overlay-light: linear-gradient(180deg, rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.62) 100%);
@@ -292,7 +292,7 @@ button {
 }
 
 .btn-primary:hover {
-  background: #1e40af;
+  background: #806200;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3);
   text-decoration: none;
@@ -521,7 +521,7 @@ button {
 }
 
 .nav-cta-btn:hover {
-  background: #1E40AF;
+  background: #806200;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(29, 78, 216, 0.3);
 }
@@ -748,7 +748,7 @@ button {
 }
 
 .nav-cta-btn:hover {
-  background: #1E40AF;
+  background: #806200;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(29, 78, 216, 0.3);
 }
@@ -3665,7 +3665,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .services-deliverables-section .package-cta a:hover {
-  color: #1E40AF;
+  color: #806200;
   text-decoration: underline;
 }
 
@@ -4071,7 +4071,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
-  color: #1F4B99;
+  color: #806200;
   margin: 32px 0;
   padding: 20px 24px;
   background: rgba(31,75,153,0.05);
@@ -5807,6 +5807,10 @@ body.accessibility-widget-visible ._access-menu {
     display: none !important;
   }
 }
+
+
+
+
 
 
 
