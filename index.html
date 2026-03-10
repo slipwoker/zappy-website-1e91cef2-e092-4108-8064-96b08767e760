@@ -844,12 +844,283 @@
 </section>
 
 
-<section id="layout-1773164225916" class="layout-section" data-zappy-component="true" style="width: 100%; padding: 80px 0; text-align: center; direction: rtl;" data-component-id="basic-centered-text">
-  <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
-  <h2 style="font-size: 36px; font-weight: 700; color: #4a4a4a; margin-bottom: 20px; font-family: system-ui, -apple-system, sans-serif;">&nbsp; החזון שלנו&nbsp;&nbsp;</h2>
-  <p style="font-size: 20px; line-height: 1.6; color: #4a4a4a; opacity: 0.8; max-width: 700px; margin: 0 auto; font-family: system-ui, -apple-system, sans-serif;">
+<section style="position: relative; width: 100%; max-width: 100%; box-sizing: border-box; overflow: hidden; background: var(--gradient-light-section); padding: 0; margin: 0;" data-zappy-section="true" class="section" id="layout-1773164225916">
+  <style>
+    .vision-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 120px 20px;
+      position: relative;
+      z-index: 2;
+    }
 
-החזון של BeeWise נשען על חכמת הדבורה. בדיוק כמו בכוורת, גם בארגון מצליח יש תיאום בין כל החלקים, זרימה של מידע ושיתוף ידע בין מחלקות.<br><br>&nbsp; בליווי שלנו אנו יוצרים עבור הארגון כוורת חכמה: מערכת מסודרת, מתואמת ויעילה שבה המידע זורם בין המחלקות, תהליכים עובדים בצורה חלקה והארגון יכול להתמקד בצמיחה ובהתפתחות.<br><br></p>
+    .vision-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      align-items: center;
+      position: relative;
+    }
+
+    .vision-decorative {
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 600px;
+      height: 600px;
+      background: var(--gradient-gold-accent);
+      opacity: 0.08;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 0;
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .vision-decorative-2 {
+      position: absolute;
+      bottom: -150px;
+      left: -150px;
+      width: 700px;
+      height: 700px;
+      background: var(--gradient-primary);
+      opacity: 0.06;
+      border-radius: 50%;
+      filter: blur(100px);
+      z-index: 0;
+      animation: float 10s ease-in-out infinite reverse;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(30px, -30px) scale(1.1); }
+    }
+
+    .vision-content-wrapper {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .vision-icon-container {
+      width: 140px;
+      height: 140px;
+      background: var(--gradient-gold-accent);
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+      box-shadow: 0 20px 60px rgba(235, 151, 10, 0.3);
+      transform: rotate(-5deg);
+      animation: iconPulse 3s ease-in-out infinite;
+      position: relative;
+    }
+
+    .vision-icon-container::before {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      background: var(--gradient-gold-shine);
+      border-radius: 32px;
+      z-index: -1;
+      opacity: 0;
+      animation: shimmer 3s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 0.6; }
+    }
+
+    @keyframes iconPulse {
+      0%, 100% { transform: rotate(-5deg) scale(1); }
+      50% { transform: rotate(-5deg) scale(1.05); }
+    }
+
+    .vision-icon {
+      font-size: 72px;
+      color: #fff;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+    }
+
+    .vision-heading {
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 900;
+      color: var(--text-dark);
+      margin: 0 0 50px 0;
+      line-height: 1.1;
+      position: relative;
+      display: inline-block;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -2px;
+    }
+
+    .vision-heading::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 6px;
+      background: var(--gradient-gold-accent);
+      border-radius: 3px;
+    }
+
+    .vision-text-block {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .vision-paragraph {
+      font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+      line-height: 2;
+      color: var(--text-dark);
+      margin: 0;
+      text-align: center;
+      font-weight: 400;
+      position: relative;
+      padding: 50px 60px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      border-radius: 30px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .vision-paragraph:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.12);
+      background: rgba(255, 255, 255, 0.85);
+    }
+
+    .vision-paragraph::before {
+      content: '״';
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      font-size: 80px;
+      color: var(--accent);
+      opacity: 0.2;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    .vision-paragraph::after {
+      content: '״';
+      position: absolute;
+      bottom: 15px;
+      left: 25px;
+      font-size: 80px;
+      color: var(--accent);
+      opacity: 0.2;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    .honeycomb-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.03;
+      z-index: 0;
+      background-image: 
+        repeating-linear-gradient(30deg, var(--primary) 0px, var(--primary) 1px, transparent 1px, transparent 50px),
+        repeating-linear-gradient(150deg, var(--accent) 0px, var(--accent) 1px, transparent 1px, transparent 50px),
+        repeating-linear-gradient(90deg, var(--primary) 0px, var(--primary) 1px, transparent 1px, transparent 50px);
+      pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+      .vision-container {
+        padding: 80px 20px;
+      }
+
+      .vision-icon-container {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+      }
+
+      .vision-icon {
+        font-size: 50px;
+      }
+
+      .vision-heading {
+        margin-bottom: 35px;
+      }
+
+      .vision-heading::after {
+        width: 80px;
+        height: 5px;
+        bottom: -12px;
+      }
+
+      .vision-paragraph {
+        padding: 35px 30px;
+        font-size: 1.125rem;
+        line-height: 1.9;
+      }
+
+      .vision-paragraph::before,
+      .vision-paragraph::after {
+        font-size: 50px;
+      }
+
+      .vision-decorative {
+        width: 400px;
+        height: 400px;
+        top: -50px;
+        right: -50px;
+      }
+
+      .vision-decorative-2 {
+        width: 450px;
+        height: 450px;
+        bottom: -80px;
+        left: -80px;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .vision-container {
+        padding: 100px 40px;
+      }
+
+      .vision-paragraph {
+        padding: 45px 50px;
+      }
+    }
+  </style>
+
+  <div class="honeycomb-pattern"></div>
+  <div class="vision-decorative"></div>
+  <div class="vision-decorative-2"></div>
+
+  <div class="vision-container">
+    <div class="vision-grid">
+      <div class="vision-content-wrapper">
+        <div class="vision-icon-container">
+          <div class="vision-icon">🐝</div>
+        </div>
+        
+        <h2 class="vision-heading">החזון שלנו</h2>
+        
+        <div class="vision-text-block">
+          <p class="vision-paragraph">החזון של BeeWise נשען על חכמת הדבורה. בדיוק כמו בכוורת, גם בארגון מצליח יש תיאום בין כל החלקים, זרימה של מידע ושיתוף ידע בין מחלקות.  בליווי שלנו אנו יוצרים עבור הארגון כוורת חכמה: מערכת מסודרת, מתואמת ויעילה שבה המידע זורם בין המחלקות, תהליכים עובדים בצורה חלקה והארגון יכול להתמקד בצמיחה ובהתפתחות.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
