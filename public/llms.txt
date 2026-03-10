@@ -1,6 +1,4 @@
-# BeeWise — Generative Engine Optimization Map
-
-> A consulting business specializing in Priority ERP system implementation and advisory services. The business focuses on helping organizations optimize their enterprise resource planning through expertise in the Priority software platform.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -40,14 +38,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About BeeWise
-A consulting business specializing in Priority ERP system implementation and advisory services. The business focuses on helping organizations optimize their enterprise resource planning through expertise in the Priority software platform.
-
-## Target Audience
-
-## Industry
-ייעוץ טכנולוגי
-
+## About Business
 ---
 
 # Additional Resources
