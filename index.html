@@ -842,11 +842,11 @@ BeeWise מסייעת לחברות למצות את מלוא הפוטנציאל ש
     <svg aria-hidden="true" viewbox="0 0 1200 80" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg" class="index-hero-section__divider-svg">
       <!-- Diagonal cut with accent line -->
       <defs>
-        <lineargradient id="index-hero-accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
+        <linearGradient id="index-hero-accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" stop-color="#F5A300" stop-opacity="0.3"></stop>
           <stop offset="50%" stop-color="#F5A300" stop-opacity="1"></stop>
           <stop offset="100%" stop-color="#F5A300" stop-opacity="0.3"></stop>
-        </lineargradient>
+        </linearGradient>
       </defs>
       
       <!-- Main fill (matches next section bg-light) -->
@@ -1087,41 +1087,44 @@ BeeWise מסייעת לחברות למצות את מלוא הפוטנציאל ש
   <!-- Bottom Divider -->
   <div class="index-process-timeline-divider-wrapper">
     <svg aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,60 L0,25 Q60,22 120,26 T240,23 Q300,26 360,22 T480,25 Q540,23 600,26 T720,22 Q780,25 840,23 T960,26 Q1020,22 1080,25 T1200,23 L1200,60 Z" fill="#FFFFFF"></path>
+      <path d="M0,60 L0,25 Q60,22 120,26 T240,23 Q300,26 360,22 T480,25 Q540,23 600,26 T720,22 Q780,25 840,23 T960,26 Q1020,22 1080,25 T1200,23 L1200,60 Z" fill="#ffffff"></path>
     </svg>
     <svg aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg" class="index-process-timeline-divider-underlayer">
-      <path d="M0,60 L0,30 Q60,27 120,31 T240,28 Q300,31 360,27 T480,30 Q540,28 600,31 T720,27 Q780,30 840,28 T960,31 Q1020,27 1080,30 T1200,28 L1200,60 Z" fill="#FFFFFF"></path>
+      <path d="M0,60 L0,30 Q60,27 120,31 T240,28 Q300,31 360,27 T480,30 Q540,28 600,31 T720,27 Q780,30 840,28 T960,31 Q1020,27 1080,30 T1200,28 L1200,60 Z" fill="#ffffff"></path>
     </svg>
   </div>
 </section>
 
-<section class="index-case-studies-preview-section" data-layout-spec="בית-case-studies-preview">
+<section class="index-case-studies-preview-section" data-layout-spec="בית-case-studies-preview" id="zappy-section-3">
   <div class="index-case-studies-preview-container">
-    <h2 class="index-case-studies-preview-title">אודות מאיה</h2>
+    <h2 class="index-case-studies-preview-title" style="">אודות מאיה</h2>
     
     <!-- Preview 1: Quote on START, Image on END -->
-    <div class="index-case-studies-preview-block index-case-studies-preview-block-1 zappy-preserve-css-grid" style="display: grid; grid-template-columns: 536.01px 536.01px;" id="zappy-auto-grid-1773164112895-m7an52" data-zappy-auto-grid="true" data-zappy-grid-align="center" data-original-item-width="536" data-original-gap="48px"><div class="index-case-studies-preview-content">
-        <p class="index-case-studies-preview-quote zappy-editable" style="">&nbsp;מאיה מעין קרלשטט היא מיישמת מערכת Priority משנת 2008 ופועלת כעצמאית בתחום משנת 2014. לאורך השנים צברה ניסיון עשיר בליווי חברות מסחריות ויצרניות בתהליכי ייעול, הטמעה והעמקת שימוש במערכת.<br><br>מאיה מתמחה בהבנת תהליכים עסקיים ובהתאמת מערכת Priority כך שתשרת את הארגון בצורה מיטבית. עבודתה משלבת ראייה מערכתית רחבה עם ירידה לפרטים.<br>לצד מאיה פועל צוות מקצועי הכולל את אילן, מיישם המתמחה בתחומי תמחיר, ניהול מלאי ומחסנים, MRP וייצור.&nbsp;&nbsp;</p>
-        <ul class="index-case-studies-preview-outcomes zappy-inline-grid-active zappy-item-component zappy-vertical-grid">
-          <li class="zappy-editable zappy-grid-item">הפחתת התאמות ידניות</li>
-          <li class="zappy-editable zappy-grid-item">זרימות אישור ברורות</li>
-          <li class="zappy-editable zappy-grid-item">מחזורי דיווח מהירים יותר</li>
+    <div class="index-case-studies-preview-block index-case-studies-preview-block-1 zappy-preserve-css-grid" id="zappy-auto-grid-1773164112895-m7an52" data-zappy-auto-grid="true" data-zappy-grid-align="center" data-original-item-width="536" data-original-gap="48px" style="grid-template-columns: 536.01px 536.01px;">
+      <div class="index-case-studies-preview-content" data-grid-item-index="0">
+        <p class="index-case-studies-preview-quote" style="">&nbsp;מאיה מעין קרלשטט היא מיישמת מערכת Priority משנת 2008 ופועלת כעצמאית בתחום משנת 2014. לאורך השנים צברה ניסיון עשיר בליווי חברות מסחריות ויצרניות בתהליכי ייעול, הטמעה והעמקת שימוש במערכת.<br><br>מאיה מתמחה בהבנת תהליכים עסקיים ובהתאמת מערכת Priority כך שתשרת את הארגון בצורה מיטבית. עבודתה משלבת ראייה מערכתית רחבה עם ירידה לפרטים.<br>לצד מאיה פועל צוות מקצועי הכולל את אילן, מיישם המתמחה בתחומי תמחיר, ניהול מלאי ומחסנים, MRP וייצור.&nbsp;&nbsp;</p>
+        <ul class="index-case-studies-preview-outcomes zappy-vertical-grid">
+          <li data-grid-item-index="0">הפחתת התאמות ידניות</li>
+          <li data-grid-item-index="1">זרימות אישור ברורות</li>
+          <li data-grid-item-index="2">מחזורי דיווח מהירים יותר</li>
         </ul>
-      </div><div class="index-case-studies-preview-image-wrapper">
-        <img data-placeholder="index-case-studies-preview-image-1" data-context="Professional team collaborating around a whiteboard in a modern office, discussing ERP workflow diagrams and process optimization for Priority system implementation, natural lighting, clean business environment" width="600" height="400" src="/assets/site-index-case-studies-preview-image-1.webp" alt="צוות מקצועי דן בתהליכי עבודה ומערכת Priority" data-element-type="image" data-element-id="img-1773164112842-0ldzx72bs" class="zappy-editable-image" data-original-position="static" style="position: relative;">
-      </div></div>
+      </div>
+      <div class="index-case-studies-preview-image-wrapper zappy-grid-item-media-only" data-grid-item-index="1" style="overflow: hidden !important; height: 399.99px !important;" data-zappy-original-height="399.9899597167969">
+        <div data-zappy-zoom-wrapper="true" data-element-id="img-1773164112842-0ldzx72bs" data-element-type="image" data-zappy-zoom-wrapper-width="536px" data-zappy-zoom-wrapper-height="400px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 536px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 400px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-placeholder="index-case-studies-preview-image-1" data-context="Professional team collaborating around a whiteboard in a modern office, discussing ERP workflow diagrams and process optimization for Priority system implementation, natural lighting, clean business environment" width="600" height="400" src="/assets/site-index-case-studies-preview-image-1-1773165769370-ek2xy4.webp?v=1773165771010" alt="צוות מקצועי דן בתהליכי עבודה ומערכת Priority" data-element-type="image" data-element-id="img-1773164112842-0ldzx72bs" class="zappy-editable-image" data-resize-handler-attached="true" data-original-position="static" style="position: relative; object-position: 50% 50%; width: 536.01px !important; height: 399.99px !important; object-fit: cover !important; max-width: 100% !important; display: block; margin-top: 0px !important; margin-bottom: 0px !important;" data-zappy-original-width="536.0099487304688" data-zappy-original-height="399.9899597167969" data-zappy-zoom="1"></div>
+      </div>
+    </div>
     
     <!-- Preview 2: Image on START, Quote on END -->
-    <div class="index-case-studies-preview-block index-case-studies-preview-block-2">
-      <div class="index-case-studies-preview-image-wrapper">
-        <img data-placeholder="index-case-studies-preview-image-2" data-context="Clean laptop screen showing Priority ERP dashboard with inventory management interface, data tables and charts visible but no sensitive information, modern office desk setup, professional business setting" width="600" height="400" src="/assets/site-index-case-studies-preview-image-2.webp" alt="ממשק מערכת Priority ERP לניהול מלאי">
+    <div class="index-case-studies-preview-block index-case-studies-preview-block-2 zappy-preserve-css-grid" id="zappy-auto-grid-1773164112898-52k1y4" data-zappy-auto-grid="true" data-zappy-grid-align="center" data-original-item-width="536" data-original-gap="48px" style="grid-template-columns: 536.01px 536.01px;">
+      <div class="index-case-studies-preview-image-wrapper zappy-grid-item-media-only" data-grid-item-index="0">
+        <img data-placeholder="index-case-studies-preview-image-2" data-context="Clean laptop screen showing Priority ERP dashboard with inventory management interface, data tables and charts visible but no sensitive information, modern office desk setup, professional business setting" width="600" height="400" src="/assets/site-index-case-studies-preview-image-2.webp" alt="ממשק מערכת Priority ERP לניהול מלאי" data-element-type="image" data-element-id="img-1773164112842-sfwk6bx9h" class="zappy-editable-image" data-resize-handler-attached="true" data-original-position="static" style="position: relative;">
       </div>
-      <div class="index-case-studies-preview-content">
+      <div class="index-case-studies-preview-content" data-grid-item-index="1">
         <p class="index-case-studies-preview-quote">"דיוק המלאי השתפר ללא הוספת כוח אדם."</p>
-        <ul class="index-case-studies-preview-outcomes">
-          <li>בקרות קבלה והנפקה מהודקות</li>
-          <li>ממשל נקי יותר של רשימת פריטים</li>
-          <li>תשומות טובות יותר לתכנון ייצור</li>
+        <ul class="index-case-studies-preview-outcomes zappy-vertical-grid">
+          <li data-grid-item-index="0">בקרות קבלה והנפקה מהודקות</li>
+          <li data-grid-item-index="1">ממשל נקי יותר של רשימת פריטים</li>
+          <li data-grid-item-index="2">תשומות טובות יותר לתכנון ייצור</li>
         </ul>
       </div>
     </div>
@@ -1133,13 +1136,13 @@ BeeWise מסייעת לחברות למצות את מלוא הפוטנציאל ש
   
   <!-- Bottom Divider: Deep-blue gradient fade -->
   <div class="index-case-studies-preview-divider-wrapper">
-    <svg aria-hidden="true" viewbox="0 0 1200 100" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 100" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <lineargradient id="index-case-studies-preview-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <linearGradient id="index-case-studies-preview-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"></stop>
           <stop offset="40%" style="stop-color:#E8EDF5;stop-opacity:1"></stop>
           <stop offset="100%" style="stop-color:#0B1220;stop-opacity:1"></stop>
-        </lineargradient>
+        </linearGradient>
       </defs>
       <rect x="0" y="0" width="1200" height="100" fill="url(#index-case-studies-preview-gradient)"></rect>
     </svg>
