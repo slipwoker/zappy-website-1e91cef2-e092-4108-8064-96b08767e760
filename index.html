@@ -344,7 +344,7 @@
       <a href="/" class="logo-link">
         <img src="/assets/beewise-logo.webp" alt="BeeWise" class="logo">
       </a>
-    </div><ul class="nav-menu" id="navMenu"><li><a href="/" data-i18n="nav-home">בית</a></li><li><a href="/services">שירותים</a></li><li><a href="/results">תוצאות</a></li></ul></div>
+    </div><ul class="nav-menu" id="navMenu"><li><a href="/services">שירותים</a></li><li><a href="/case-studies">מקרי בוחן</a></li></ul></div>
     
     
     
@@ -389,12 +389,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -407,7 +407,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -543,7 +543,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -734,9 +734,9 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
-          : '050-5446785';
+          : '[business_phone]';
         
         window.location.href = 'tel:' + phoneNumber;
         console.log('[Navbar] Phone button clicked');
@@ -751,7 +751,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -783,9 +783,9 @@
 </script>
   
   <main>
-    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-card" id="zappy-section-1773067534602-2212" style="position: relative; overflow: hidden; background-image: linear-gradient(rgba(11, 18, 32, 0.75), rgba(11, 18, 32, 0.75)), url(&amp;quot;assets/business-general-hero-upload-1773070977978-cxsgje.webp?v=1773070979889&amp;quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; --zappy-bg-overlay: rgba(11, 18, 32, 0.75); --zappy-bg-image: url(&amp;quot;assets/business-general-hero-upload-1773070977978-cxsgje.webp?v=1773070979889&amp;quot;); cursor: url(&amp;quot;data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29.2344 9.93125L4.87351 34.2922C4.67351 34.4922 4.52976 34.7437 4.46101 35.0203L1.60789 46.4984C1.47664 47.0312 1.63289 47.5922 2.02039 47.9797C2.40945 48.3688 2.97351 48.5219 3.50164 48.3922L14.9798 45.5406C15.2548 45.4719 15.5063 45.3297 15.7079 45.1281L40.0688 20.7672L29.2344 9.93125Z' fill='%23FF0083'/%3E%3Cpath d='M46.1937 3.80781C43.2062 0.820311 38.3468 0.820311 35.3578 3.80781L31.4421 7.72344L42.2781 18.5594L46.1937 14.6437C49.1812 11.6547 49.1812 6.79531 46.1937 3.80781Z' fill='%23FF0083'/%3E%3C/svg%3E&amp;quot;) 2 13, pointer !important;" data-zappy-bg-type="image" data-zappy-bg-color="" data-zappy-bg-image="assets/business-general-hero-upload-1773070977978-cxsgje.webp?v=1773070979889" data-zappy-bg-overlay-color="#0b1220" data-zappy-bg-overlay-opacity="75" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-element-id="zappy-hero-bg-zappy-section-1773067534602-2212" data-element-type="background-image">
+    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-card" id="zappy-section-1773067534602-2212" style="position: relative; overflow: hidden; background-image: linear-gradient(rgba(11, 18, 32, 0.75), rgba(11, 18, 32, 0.75)), url(&quot;assets/business-general-hero-upload-1773070977978-cxsgje.webp?v=1773070979889&quot;); background-size: cover; background-position: center; background-repeat: no-repeat; --zappy-bg-overlay: rgba(11, 18, 32, 0.75); --zappy-bg-image: url(&quot;assets/business-general-hero-upload-1773070977978-cxsgje.webp?v=1773070979889&quot;)" data-zappy-bg-type="image" data-zappy-bg-color="" data-zappy-bg-image="assets/business-general-hero-upload-1773070977978-cxsgje.webp?v=1773070979889" data-zappy-bg-overlay-color="#0b1220" data-zappy-bg-overlay-opacity="75" data-zappy-bg-video-type="" data-zappy-bg-video-url="">
   <!-- Background Image -->
-  <img data-hero-bg="true" class="index-hero-section__bg-image zappy-editable-image" data-placeholder="index-hero-bg" data-context="Modern bright office workspace with Priority ERP consultant and client team collaborating around a large monitor displaying process flow diagrams and system dashboards. Natural daylight streaming through windows, contemporary office furniture, professional business atmosphere. Focus on teamwork and technology integration. High-quality realistic photography, bright and optimistic mood." width="1920" height="1080" src="/assets/site-index-hero-bg.webp" alt="צוות BeeWise מייעץ ללקוחות על מערכת Priority ERP" data-preserve-bg="0" style="display: none" data-zappy-original-bg="hidden">
+  <img data-hero-bg="true" class="index-hero-section__bg-image" data-placeholder="index-hero-bg" data-context="Modern bright office workspace with Priority ERP consultant and client team collaborating around a large monitor displaying process flow diagrams and system dashboards. Natural daylight streaming through windows, contemporary office furniture, professional business atmosphere. Focus on teamwork and technology integration. High-quality realistic photography, bright and optimistic mood." width="1920" height="1080" src="/assets/site-index-hero-bg.webp" alt="צוות BeeWise מייעץ ללקוחות על מערכת Priority ERP" data-preserve-bg="0" style="display: none" data-zappy-original-bg="hidden">
 
   <!-- Scrim Overlay -->
   <div class="index-hero-section__scrim" aria-hidden="true" style="display: none" data-zappy-original-bg="hidden"></div>
@@ -801,14 +801,14 @@
 
       </h1>
       
-      <h3 class="index-hero-section__subtitle">&amp;nbsp;<font color="#707070">אנחנו מסייעים לחברות למצות את מלוא הפוטנציאל של מערכת פריוריטי באמצעות ייעול תהליכים, שיפור איכות הנתונים וליווי מקצועי מתמשך.&amp;nbsp;&amp;nbsp;
-      </font></h3>
+      <h3 class="index-hero-section__subtitle">&nbsp;אנחנו מסייעים לחברות למצות את מלוא הפוטנציאל של מערכת Priority באמצעות ייעול תהליכים, שיפור איכות הנתונים וליווי מקצועי מתמשך.&nbsp;&nbsp;
+      </h3>
 
-      <div class="index-hero-section__cta-row" style="text-align: center !important; display: flex !important; justify-content: center !important; align-items: flex-start !important; width: 100% !important;">
-        <a href="/contact" class="index-hero-section__btn index-hero-section__btn--primary btn btn-outline btn-secondary" data-element-type="button" data-element-id="btn-1773074176056-fnjaaxgpy" data-native-element="true" style="outline: none; border-color: var(--primary-color, var(--primary, #8B0000)) !important; color: var(--text-color, #1a1a1a) !important; background-color: transparent !important; background-image: none !important;" data-text-color="dark">
+      <div class="index-hero-section__cta-row">
+        <a href="/contact" class="index-hero-section__btn index-hero-section__btn--primary">
           שיחה עם יועץ ERP
         </a>
-        <a href="/services" class="index-hero-section__btn index-hero-section__btn--secondary btn btn-primary" data-element-type="button" data-element-id="btn-1773074176056-29dc7zhxh" data-native-element="true" style="outline: none; color: var(--light-text, #ffffff) !important; border-color: var(--text-color, #1a1a1a) !important; background-color: var(--text-color, #1a1a1a) !important; background-image: none !important;" data-text-color="light">
+        <a href="/services" class="index-hero-section__btn index-hero-section__btn--secondary">
           גלה את השירותים
         </a>
       </div>
@@ -845,15 +845,15 @@
       </defs>
       
       <!-- Main fill (matches next section bg-light) -->
-      <path d="M0,80 L0,20 L1200,50 L1200,80 Z" fill="#3B37E3"></path>
+      <path d="M0,80 L0,20 L1200,50 L1200,80 Z" fill="var(--bg-light)"></path>
       
       <!-- Accent line along the cut -->
-      <path d="M0,20 L1200,50" stroke="url(#index-hero-accent-line)" stroke-width="2" fill="#3B37E3"></path>
+      <path d="M0,20 L1200,50" stroke="url(#index-hero-accent-line)" stroke-width="2" fill="var(--bg-light)"></path>
     </svg>
   </div>
 </section>
 
-<section id="layout-1773071615276" class="layout-section hero-section" data-zappy-component="true" style="width: 100vw; margin-left: calc(-50vw + 50%); height: 100vh; min-height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; direction: rtl; overflow: hidden; box-sizing: border-box; background-color: #3B37E3; --zappy-bg-color: #3B37E3" data-component-id="hero-fullscreen-bg" data-zappy-bg-type="color" data-zappy-bg-color="#3B37E3" data-zappy-bg-image="" data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="0" data-zappy-bg-video-type="" data-zappy-bg-video-url="">
+<section id="layout-1773071615276" class="layout-section hero-section" data-zappy-component="true" style="width: 100vw; margin-left: calc(-50vw + 50%); height: 100vh; min-height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; direction: rtl; overflow: hidden; box-sizing: border-box;" data-component-id="hero-fullscreen-bg">
   <style>
     .hero-bg-container img.hero-background-image,
     .hero-bg-container img[data-hero-background="true"] {
@@ -881,16 +881,20 @@
     }
   </style>
   <div class="hero-bg-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
-    
+    <img data-placeholder="hero-bg-1773071615276" data-context="Hero background image for 
+
+החזון שלנו
+
+" data-zappy-editable-image="true" data-element-type="image" data-hero-background="true" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%231D4ED8;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2364748B;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='24' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3EHero Background Image%3C/text%3E%3C/svg%3E" alt="Hero background" style="width: 100%; height: 100%; object-fit: cover; object-position: center; cursor: pointer; display: block;" class="layout-placeholder-image zappy-editable-image hero-background-image">
   </div>
-  
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); z-index: 2; pointer-events: none;"></div>
   <div class="container" style="position: relative; z-index: 3; max-width: 1200px; width: 100%; margin: 0 auto; padding: 80px 1.5rem; text-align: center; pointer-events: none; box-sizing: border-box;">
     <h1 style="font-size: 56px; font-weight: 700; color: #FFFFFF; margin-bottom: 24px; font-family: system-ui, -apple-system, sans-serif; text-shadow: 0 2px 4px rgba(0,0,0,0.3); pointer-events: auto;">כותרת שלך כאן</h1>
     <h3 style="font-size: 26px; font-weight: 400; color: #FFFFFF; opacity: 0.9; max-width: 700px; margin: 0 auto; font-family: system-ui, -apple-system, sans-serif; text-shadow: 0 1px 2px rgba(0,0,0,0.3); pointer-events: auto;">
 
 החזון של BeeWise נשען על חכמת הדבורה. בדיוק כמו בכוורת, גם בארגון מצליח יש תיאום בין כל החלקים, זרימה של מידע ושיתוף ידע בין מחלקות.
 
-כותרת משנה שלך כאן.<br><br><br><br>&amp;nbsp; בליווי שלנו אנו יוצרים עבור הארגון כוורת חכמה: מערכת מסודרת, מתואמת ויעילה שבה המידע זורם בין המחלקות, תהליכים עובדים בצורה חלקה והארגון יכול להתמקד בצמיחה ובהתפתחות.&amp;nbsp;&amp;nbsp;<br><br><br><br></h3>
+כותרת משנה שלך כאן.<br><br>&nbsp; בליווי שלנו אנו יוצרים עבור הארגון כוורת חכמה: מערכת מסודרת, מתואמת ויעילה שבה המידע זורם בין המחלקות, תהליכים עובדים בצורה חלקה והארגון יכול להתמקד בצמיחה ובהתפתחות.&nbsp;&nbsp;<br><br></h3>
   </div>
 </section>
 
@@ -1097,7 +1101,7 @@
     </div>
     
     <div class="index-case-studies-preview-cta-wrapper">
-      <a href="/results" class="index-case-studies-preview-cta">תוצאות</a>
+      <a href="/case-studies" class="index-case-studies-preview-cta">קרא עוד מקרי בוחן</a>
     </div>
   </div>
   
@@ -1159,14 +1163,14 @@
     <div class="footer-top">
       <div class="footer-column footer-company">
         <img src="/assets/beewise-logo.webp" alt="BeeWise" class="logo">
-        <p class="company-description">&amp;nbsp;נשמח להכיר את החברה שלכם ולבחון כיצד ניתן לייעל את התהליכים העסקיים באמצעות שימוש חכם במערכת Priority.&amp;nbsp;&amp;nbsp;</p>
+        <p class="company-description">פתרונות טכנולוגיים מתקדמים לעסקים בכל גודל. אנחנו כאן כדי להוביל את העסק שלכם לעידן הדיגיטלי.</p>
       </div>
       
       <div class="footer-column footer-links">
         <h3 class="footer-heading">קישורים מהירים</h3>
         <ul class="footer-nav">
           <li><a href="/services">שירותים</a></li>
-          <li>תוצאות</li>
+          <li><a href="/case-studies">מקרי בוחן</a></li>
           <li><a href="/contact">צור קשר</a></li>
         </ul>
       </div>
@@ -1176,22 +1180,23 @@
         <ul class="contact-list">
           <li>
             <i class="fas fa-envelope"></i>
-            <a href="mailto:maya@beewise.co.il">maya@beewise.co.il</a>
+            <a href="mailto:[business_email]">[business_email]</a>
           </li>
           <li>
             <i class="fas fa-phone"></i>
-            <a href="tel:050-5446785">050-5446785</a>
+            <a href="tel:[business_phone]">[business_phone]</a>
           </li>
-          <li><a href="/"><br><br></a></li>
+          <li><a href="/"><i class="fas fa-map-marker-alt"></i>
+            <span>[business_address]</span></a></li>
         </ul>
       </div>
       
       <div class="footer-column footer-social">
         <h3 class="footer-heading">עקבו אחרינו</h3>
         <div class="social-links">
-          <a href="#" aria-label="Facebook" style="display:none !important;"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram" style="display:none !important;"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="WhatsApp" style="display:none !important;"><i class="fab fa-whatsapp"></i></a>
+          <a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="[instagram_handle]" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="[whatsapp_handle]" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </div>

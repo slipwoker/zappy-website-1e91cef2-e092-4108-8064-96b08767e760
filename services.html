@@ -325,16 +325,16 @@
 
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
   
   <button class="phone-header-btn" aria-label="Call">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -344,7 +344,7 @@
       <a href="/" class="logo-link">
         <img src="/assets/beewise-logo.webp" alt="BeeWise" class="logo">
       </a>
-    </div><ul class="nav-menu" id="navMenu"><li><a href="/" data-i18n="nav-home">בית</a></li><li><a href="/services">שירותים</a></li><li><a href="/results">תוצאות</a></li></ul></div>
+    </div><ul class="nav-menu" id="navMenu"><li><a href="/services">שירותים</a></li><li><a href="/case-studies">מקרי בוחן</a></li></ul></div>
     
     
     
@@ -389,12 +389,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -407,7 +407,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -543,7 +543,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -734,9 +734,9 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
-          : '050-5446785';
+          : '[business_phone]';
         
         window.location.href = 'tel:' + phoneNumber;
         console.log('[Navbar] Phone button clicked');
@@ -751,7 +751,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -795,19 +795,19 @@
           <h3>למי זה מיועד</h3>
           <ul>
             <li>
-              <svg data-element-type="icon" data-icon-type="svg" class="services-intro-bullet-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg data-element-type="icon" data-icon-type="svg" class="services-intro-bullet-icon" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
               <span>מנהלי תפעול ומנכ"לים המחפשים שליטה בתהליכים</span>
             </li>
             <li>
-              <svg data-element-type="icon" data-icon-type="svg" class="services-intro-bullet-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg data-element-type="icon" data-icon-type="svg" class="services-intro-bullet-icon" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
               <span>צוותי CFO הזקוקים לסגירה ודיווח אמינים</span>
             </li>
             <li>
-              <svg data-element-type="icon" data-icon-type="svg" class="services-intro-bullet-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg data-element-type="icon" data-icon-type="svg" class="services-intro-bullet-icon" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
               <span>מנהלי IT המייצבים אינטגרציות וממשל נתונים</span>
@@ -823,7 +823,7 @@
   </div>
   
   <div class="services-intro-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
       <g>
         <line x1="0" y1="30" x2="380" y2="30" stroke="var(--border-light)" stroke-width="2"></line>
         <line x1="420" y1="30" x2="780" y2="30" stroke="var(--border-light)" stroke-width="2"></line>
@@ -844,7 +844,7 @@
       <!-- Module Card 1: Finance -->
       <article class="services-module-card">
         <div class="services-module-icon">
-          <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
             <rect x="8" y="12" width="32" height="24" rx="2" fill="var(--accent)" opacity="0.15"></rect>
             <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2" fill="none"></rect>
             <path d="M8 20h32M16 12v-4M32 12v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
@@ -864,7 +864,7 @@
       <!-- Module Card 2: Inventory & Warehousing -->
       <article class="services-module-card">
         <div class="services-module-icon">
-          <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
             <rect x="6" y="14" width="36" height="24" rx="2" fill="var(--accent)" opacity="0.15"></rect>
             <rect x="6" y="14" width="36" height="24" rx="2" stroke="currentColor" stroke-width="2" fill="none"></rect>
             <path d="M6 22h36M6 30h36M18 14v24M30 14v24" stroke="currentColor" stroke-width="2"></path>
@@ -885,7 +885,7 @@
       <!-- Module Card 3: Purchasing -->
       <article class="services-module-card">
         <div class="services-module-icon">
-          <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 10h24l4 28H8l4-28z" fill="var(--accent)" opacity="0.15"></path>
             <path d="M12 10h24l4 28H8l4-28z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"></path>
             <path d="M18 10V8a6 6 0 0112 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
@@ -904,7 +904,7 @@
       <!-- Module Card 4: Sales & CRM -->
       <article class="services-module-card">
         <div class="services-module-icon">
-          <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
             <circle cx="24" cy="14" r="6" fill="var(--accent)" opacity="0.15"></circle>
             <circle cx="24" cy="14" r="6" stroke="currentColor" stroke-width="2" fill="none"></circle>
             <path d="M12 38c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
@@ -924,7 +924,7 @@
       <!-- Module Card 5: Production -->
       <article class="services-module-card">
         <div class="services-module-icon">
-          <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
             <rect x="8" y="16" width="32" height="20" rx="2" fill="var(--accent)" opacity="0.15"></rect>
             <rect x="8" y="16" width="32" height="20" rx="2" stroke="currentColor" stroke-width="2" fill="none"></rect>
             <circle cx="16" cy="26" r="3" stroke="currentColor" stroke-width="2" fill="none"></circle>
@@ -945,7 +945,7 @@
       <!-- Module Card 6: Integrations & Data -->
       <article class="services-module-card">
         <div class="services-module-icon">
-          <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
             <rect x="6" y="18" width="14" height="12" rx="2" fill="var(--accent)" opacity="0.15"></rect>
             <rect x="28" y="18" width="14" height="12" rx="2" fill="var(--accent)" opacity="0.15"></rect>
             <rect x="6" y="18" width="14" height="12" rx="2" stroke="currentColor" stroke-width="2" fill="none"></rect>
@@ -968,7 +968,7 @@
 
   <!-- Bottom Divider: Subtle Wave -->
   <div class="services-service-modules-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 40" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,40 L0,20 Q300,18 600,20 T1200,20 L1200,40 Z" fill="#F2F4F7"></path>
     </svg>
   </div>
@@ -994,7 +994,7 @@
 
         <div class="services-comparison-row">
           <div class="services-comparison-label">
-            <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6 10L8.5 12.5L14 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               <rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"></rect>
             </svg>
@@ -1010,7 +1010,7 @@
 
         <div class="services-comparison-row">
           <div class="services-comparison-label">
-            <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 6h12M4 10h12M4 14h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
               <rect x="2" y="3" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"></rect>
             </svg>
@@ -1026,7 +1026,7 @@
 
         <div class="services-comparison-row">
           <div class="services-comparison-label">
-            <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
               <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
             </svg>
@@ -1042,7 +1042,7 @@
 
         <div class="services-comparison-row">
           <div class="services-comparison-label">
-            <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6 6l8 8M14 6l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
               <path d="M3 10h14M10 3v14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"></path>
             </svg>
@@ -1058,7 +1058,7 @@
 
         <div class="services-comparison-row">
           <div class="services-comparison-label">
-            <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="3" y="5" width="5" height="10" rx="1" stroke="currentColor" stroke-width="1.5" fill="none"></rect>
               <rect x="9" y="3" width="5" height="12" rx="1" stroke="currentColor" stroke-width="1.5" fill="none"></rect>
               <rect x="15" y="7" width="2" height="8" rx="1" fill="currentColor"></rect>
@@ -1077,7 +1077,7 @@
   </div>
 
   <div class="services-comparison-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,60 L0,30 L580,30 L600,50 L620,30 L1200,30 L1200,60 Z" fill="#FFFFFF"></path>
     </svg>
   </div>
@@ -1143,7 +1143,7 @@
 
   <!-- Bottom Divider: Deep-blue to transparent gradient -->
   <div class="deliverables-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="deliverables-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" style="stop-color:#1D4ED8;stop-opacity:0.4"></stop>
@@ -1168,14 +1168,14 @@
     <div class="footer-top">
       <div class="footer-column footer-company">
         <img src="/assets/beewise-logo.webp" alt="BeeWise" class="logo">
-        <p class="company-description">&amp;nbsp;נשמח להכיר את החברה שלכם ולבחון כיצד ניתן לייעל את התהליכים העסקיים באמצעות שימוש חכם במערכת Priority.&amp;nbsp;&amp;nbsp;</p>
+        <p class="company-description">פתרונות טכנולוגיים מתקדמים לעסקים בכל גודל. אנחנו כאן כדי להוביל את העסק שלכם לעידן הדיגיטלי.</p>
       </div>
       
       <div class="footer-column footer-links">
         <h3 class="footer-heading">קישורים מהירים</h3>
         <ul class="footer-nav">
           <li><a href="/services">שירותים</a></li>
-          <li>תוצאות</li>
+          <li><a href="/case-studies">מקרי בוחן</a></li>
           <li><a href="/contact">צור קשר</a></li>
         </ul>
       </div>
@@ -1185,22 +1185,23 @@
         <ul class="contact-list">
           <li>
             <i class="fas fa-envelope"></i>
-            <a href="mailto:maya@beewise.co.il">maya@beewise.co.il</a>
+            <a href="mailto:[business_email]">[business_email]</a>
           </li>
           <li>
             <i class="fas fa-phone"></i>
-            <a href="tel:050-5446785">050-5446785</a>
+            <a href="tel:[business_phone]">[business_phone]</a>
           </li>
-          <li><a href="/"><br><br></a></li>
+          <li><a href="/"><i class="fas fa-map-marker-alt"></i>
+            <span>[business_address]</span></a></li>
         </ul>
       </div>
       
       <div class="footer-column footer-social">
         <h3 class="footer-heading">עקבו אחרינו</h3>
         <div class="social-links">
-          <a href="#" aria-label="Facebook" style="display:none !important;"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram" style="display:none !important;"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="WhatsApp" style="display:none !important;"><i class="fab fa-whatsapp"></i></a>
+          <a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="[instagram_handle]" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="[whatsapp_handle]" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </div>
