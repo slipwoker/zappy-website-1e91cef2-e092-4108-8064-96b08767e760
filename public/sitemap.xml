@@ -13,15 +13,15 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beewise.zappy5.app/results</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://beewise.zappy5.app/contact</loc>
     <lastmod>2026-03-10</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beewise.zappy5.app/results</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
