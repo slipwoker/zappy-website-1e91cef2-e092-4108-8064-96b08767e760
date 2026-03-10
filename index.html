@@ -785,7 +785,7 @@
   <main>
     <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-card" id="zappy-section-0">
   <!-- Background Image -->
-  <img data-hero-bg="true" class="index-hero-section__bg-image zappy-editable-image" data-placeholder="index-hero-bg" data-context="Modern bright office workspace with Priority ERP consultant and client team collaborating around a large monitor displaying process flow diagrams and system dashboards. Natural daylight streaming through windows, contemporary office furniture, professional business atmosphere. Focus on teamwork and technology integration. High-quality realistic photography, bright and optimistic mood." width="1920" height="1080" src="/assets/site-index-hero-bg-1773162870559-1xk5ew.webp?v=1773162872158" alt="צוות BeeWise מייעץ ללקוחות על מערכת Priority ERP" data-preserve-bg="0" data-element-type="image" data-element-id="img-1773161398711-3cwxmftpl" data-resize-handler-attached="true" style="object-position: 50% 50%; object-fit: cover; width: 100%; height: 100%;" data-zappy-zoom="1">
+  <div data-zappy-zoom-wrapper="true" data-element-id="img-1773161398711-3cwxmftpl" data-element-type="image" data-zappy-zoom-wrapper-width-mode="full" style="position: absolute !important; top: 0px !important; left: 0px !important; width: 1786px !important; height: 741px !important; max-width: 100% !important; margin-left: 0px !important; margin-right: 0px !important; display: block !important; z-index: 1 !important; overflow: hidden !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-zoom-wrapper-width="1786px" data-zappy-zoom-wrapper-height="741px"><img data-hero-bg="true" class="index-hero-section__bg-image zappy-editable-image" data-placeholder="index-hero-bg" data-context="Modern bright office workspace with Priority ERP consultant and client team collaborating around a large monitor displaying process flow diagrams and system dashboards. Natural daylight streaming through windows, contemporary office furniture, professional business atmosphere. Focus on teamwork and technology integration. High-quality realistic photography, bright and optimistic mood." width="1920" height="1080" src="/assets/site-index-hero-bg-1773163006791-efcq0k.webp?v=1773163008454" alt="צוות BeeWise מייעץ ללקוחות על מערכת Priority ERP" data-preserve-bg="0" data-element-type="image" data-element-id="img-1773161398711-3cwxmftpl" style="object-position: 50% 50%; object-fit: cover; width: 100%; height: 100%; margin: 0px !important; position: absolute !important; left: 0% !important; top: -17.237% !important; max-width: none !important; max-height: none !important; display: block !important;" data-zappy-zoom="1" data-resize-handler-attached="true" data-zappy-original-width="1785.599853515625" data-zappy-original-height="741.1199340820312"></div>
 
   <!-- Scrim Overlay -->
   <div class="index-hero-section__scrim" aria-hidden="true"></div>
@@ -1296,6 +1296,34 @@
       if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileLangMenu); }
       else { initMobileLangMenu(); }
       window.addEventListener('resize', function() { clearTimeout(window._mlrt); window._mlrt = setTimeout(initMobileLangMenu, 250); });
+    })();
+    </script>
+
+    <script>
+    (function(){
+      if(window.innerWidth>768)return;
+      function fixZW(){
+        document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){
+          var cw=w.style.getPropertyValue('width');
+          if(!cw||cw==='100%')return;
+          w.style.setProperty('width','100%','important');
+          w.style.setProperty('max-width','100%','important');
+          w.style.setProperty('height','auto','important');
+          var img=w.querySelector('img');
+          if(img){
+            img.style.setProperty('position','relative','important');
+            img.style.setProperty('width','100%','important');
+            img.style.setProperty('height','auto','important');
+            img.style.setProperty('max-width','100%','important');
+            img.style.setProperty('max-height','400px','important');
+            img.style.setProperty('object-fit','cover','important');
+            img.style.setProperty('left','0','important');
+            img.style.setProperty('top','0','important');
+          }
+        });
+      }
+      if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fixZW);
+      else setTimeout(fixZW,50);
     })();
     </script>
 </body>
