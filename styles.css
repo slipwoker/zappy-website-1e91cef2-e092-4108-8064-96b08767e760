@@ -2010,7 +2010,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   font-size: 22px;
   font-weight: 400;
   line-height: 1.5;
-  color: #F8E97A;
+  color: #817207;
   margin: 0 0 32px 0;
   text-align: right;
 }
@@ -2067,7 +2067,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   gap: 12px;
   flex-wrap: wrap;
   font-size: 15px;
-  color: #F8E97A;
+  color: #817207;
   padding-top: 16px;
   border-top: 1px solid rgba(229,231,235,0.6);
 }
@@ -3162,7 +3162,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
-  color: #F8E97A;
+  color: #817207;
   max-width: 720px;
   margin: 0 0 0 auto;
 }
@@ -3225,7 +3225,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
-  color: #F8E97A;
+  color: #817207;
   text-align: right;
   padding-inline-start: 20px;
   position: relative;
@@ -3255,7 +3255,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 
 .services-service-modules-section .services-module-deliverables strong {
   font-weight: 600;
-  color: #F8E97A;
+  color: #817207;
 }
 
 .services-service-modules-section .services-service-modules-divider-wrapper {
@@ -3540,7 +3540,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 .services-deliverables-section .deliverables-header p {
   font-size: 16px;
   line-height: 1.6;
-  color: #F8E97A;
+  color: #817207;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -3600,7 +3600,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 .services-deliverables-section .package-best-for {
   font-size: 14px;
   line-height: 1.6;
-  color: #F8E97A;
+  color: #817207;
   margin-bottom: 20px;
   text-align: right;
 }
@@ -3632,7 +3632,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 .services-deliverables-section .package-includes li {
   font-size: 14px;
   line-height: 1.6;
-  color: #F8E97A;
+  color: #817207;
   padding-right: 24px;
   position: relative;
   margin-bottom: 10px;
@@ -3644,7 +3644,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   position: absolute;
   right: 0;
   top: 0;
-  color: #F37B3F;
+  color: #ca4c0d;
   font-weight: 700;
   font-size: 16px;
 }
@@ -3659,13 +3659,13 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 .services-deliverables-section .package-cta a {
   font-size: 14px;
   font-weight: 700;
-  color: #FFA500;
+  color: #a36a00;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .services-deliverables-section .package-cta a:hover {
-  color: #FFA500;
+  color: #a36a00;
   text-decoration: underline;
 }
 
@@ -3868,7 +3868,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .case-studies-intro-section .case-studies-intro-metric svg {
-  color: #FFA500;
+  color: #a36a00;
   margin-bottom: 16px;
   display: inline-block;
 }
@@ -4035,7 +4035,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 }
 
 .case-studies-case-studies-section .case-content p {
-  color: #F8E97A;
+  color: #817207;
   line-height: 1.6;
   margin-bottom: 16px;
 }
@@ -4051,7 +4051,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   position: relative;
   padding-inline-start: 28px;
   margin-bottom: 12px;
-  color: #F8E97A;
+  color: #817207;
   line-height: 1.6;
   text-align: right;
 }
@@ -4061,7 +4061,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   position: absolute;
   inset-inline-end: 0;
   top: 0;
-  color: #FFA500;
+  color: #a36a00;
   font-weight: 700;
   font-size: 18px;
 }
@@ -4071,7 +4071,7 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
-  color: #FFA500;
+  color: #a36a00;
   margin: 32px 0;
   padding: 20px 24px;
   background: rgba(31,75,153,0.05);
